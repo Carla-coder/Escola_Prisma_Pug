@@ -9,4 +9,3 @@ const iniciar = async (req, res) => {
 module.exports = {
     iniciar
 }
-
