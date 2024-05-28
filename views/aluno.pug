@@ -15,15 +15,21 @@ html(lang="pt-br")
                 button(onclick="window.location.href='/aluno'") Alunos
                 button(onclick="window.location.href='/professores'") Professores
             div(class="container")
-                each turma in turmas
-                    div(class="card")
-                        p(class="titulo")
-                            b Turma:
-                            i #{turma.abreviacao}
-                        p(class="dados") #{turma.nome}
-                        p(class="dados")
-                            b Id da turma:
-                            i #{turma.id}
-                        button Detalhes
+                table
+                    thead
+                        tr
+                            th RA
+                            th Nome Completo
+                            th Nascimento
+                            th Turma
+                    tbody
+                        each aluno in alunos
+                            tr
+                                td= aluno.ra
+                                td= aluno.nome
+                                td
+                                    input(type='date', value=new Date(aluno.nascimento).toISOString().substring(0, 10), disabled=true)
+                                td= aluno.idTurma
+
         footer
             h2 By Carla-coder
