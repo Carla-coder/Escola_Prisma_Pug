@@ -55,7 +55,8 @@ html(lang="pt-br")
                                                         each turma in todasAsTurmas
                                                             option(value=turma.id selected=professor.turmas.some(pt => pt.idTurma === turma.id))= turma.abreviacao
                                                 input(type="submit" value="Alterar")
-                                                // Formulário de exclusão
+
+                                    // Formulário de exclusão
                                     form(action=`/professor/${professor.id}?_method=DELETE`, method='POST' style="display:inline;")
                                         input(type="submit" value="Excluir" style="background-color: var(--ultima); color: black;")
 
