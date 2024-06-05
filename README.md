@@ -1,9 +1,7 @@
-
 # Projeto Escola ACME
 
 Este é um projeto desenvolvido para gerenciar informações de uma escola fictícia chamada Escola ACME. O objetivo principal é fornecer uma plataforma onde é possível gerenciar turmas,
 professores e alunos de forma fácil e organizada. As tecnologias utilizadas incluem Pug, Node.js e Prisma.
-
 
 ## Funcionalidades Principais
 
@@ -23,10 +21,7 @@ professores e alunos de forma fácil e organizada. As tecnologias utilizadas inc
 
 - **Botão para Alterar dados do Aluno**: Na tabela de alunos, abre-se um modal onde são editados os dados de cada aluno e outro botão para excluir aluno com uma mensagem de alerta sobre a exclusão. Isso permite a atualização de informações pessoais conforme necessário.
 
-
-
 ## Tecnologias utilizadas
-
 
 - **Pug**: Motor de template que simplifica a criação de interfaces HTML dinâmicas.
 
@@ -45,7 +40,6 @@ professores e alunos de forma fácil e organizada. As tecnologias utilizadas inc
 ```cmd
 npm i
 ```
-
 - Configure o arquivo .env com a string a seguir:
 
 ```cmd
@@ -66,13 +60,55 @@ DATABASE_URL="mysql://root@localhost:3306/escola?schema=public&timezone=UTC"
 
  - Acesse a aplicação no navegador usando o endereço http://localhost:3000. 
 
+## Print das Telas
 
+- Tela Turmas
 
+![tela turmas](https://github.com/Carla-coder/Escola_Prisma_Pug/assets/128012862/521e89a1-6e0f-4650-974e-0ea723d49402)
+
+- Modal Cadastro de Turmas
+ 
+![modal turmas](https://github.com/Carla-coder/Escola_Prisma_Pug/assets/128012862/c4a68f20-5ce3-4b68-9774-63c08eb9bbee)
+
+- Modal Detalhes da Turma
+ 
+![modal detalhes da turma](https://github.com/Carla-coder/Escola_Prisma_Pug/assets/128012862/16269fa5-98c2-4ef0-9406-3a333d3ddd82)
+
+- Tela Alunos
+
+![tela alunos](https://github.com/Carla-coder/Escola_Prisma_Pug/assets/128012862/3075e601-4af7-454e-95f0-e0bcc685648e)
+
+- Modal Alunos
+
+![modal alunos](https://github.com/Carla-coder/Escola_Prisma_Pug/assets/128012862/f0edb515-2fbb-4dc0-af36-51d9e22eff81)
+
+- Modal Cadastro de Alunos
+
+ ![modal alunos](https://github.com/Carla-coder/Escola_Prisma_Pug/assets/128012862/5159f41e-10c1-4b6e-b527-281584bbc97c)
+
+ - Modal Editar Aluno
+
+ ![modal editar aluno](https://github.com/Carla-coder/Escola_Prisma_Pug/assets/128012862/8a17bc4c-1e18-4c8a-9649-3c1cdcb81eae)
+
+ - Modal Excluír Aluno
+
+ ![mensagem exclusão aluno](https://github.com/Carla-coder/Escola_Prisma_Pug/assets/128012862/57d6290d-8d97-4f4c-9500-39f2bb3faa2a)
+
+ - Tela Professores
+
+![tela professores](https://github.com/Carla-coder/Escola_Prisma_Pug/assets/128012862/ba46d1c1-70f4-4c89-af3f-a902d3892c8e)
+
+- Modal Cadastrar Professores
+
+![modal professores](https://github.com/Carla-coder/Escola_Prisma_Pug/assets/128012862/6d392ef9-0355-4850-bc8b-0967c92e7864)
+
+- Modal Alterar Professor
+
+![modal alterar professor](https://github.com/Carla-coder/Escola_Prisma_Pug/assets/128012862/c7044028-544c-4002-a128-c6ff8af65459)
 
 ## Autores
 
 - [@octokatherine](https://www.github.com/Carla-coder)
-
 
 ## Instituição de Ensino
 
