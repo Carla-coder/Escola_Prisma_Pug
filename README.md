@@ -74,10 +74,6 @@ DATABASE_URL="mysql://root@localhost:3306/escola?schema=public&timezone=UTC"
  
 ![modal detalhes da turma](https://github.com/Carla-coder/Escola_Prisma_Pug/assets/128012862/16269fa5-98c2-4ef0-9406-3a333d3ddd82)
 
-- Tela Alunos
-
-![tela alunos](https://github.com/Carla-coder/Escola_Prisma_Pug/assets/128012862/3075e601-4af7-454e-95f0-e0bcc685648e)
-
 - Modal Alunos
 
 ![modal alunos](https://github.com/Carla-coder/Escola_Prisma_Pug/assets/128012862/f0edb515-2fbb-4dc0-af36-51d9e22eff81)
