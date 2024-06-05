@@ -17,7 +17,7 @@ router.put('/aluno/:ra', aluno.alterar)
 
 router.get('/professor', professor.listar)
 router.post('/professor', professor.criar)
-router.delete('/professor', professor.excluir)
+router.delete('/professor/:id', professor.excluir)
 router.put('/professor/:id', professor.alterar)
 
 module.exports = router

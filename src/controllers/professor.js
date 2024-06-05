@@ -49,10 +49,34 @@ const alterar = async (req, res) => {
     res.redirect('/professor');
 };
 
+// const excluir = async (req, res) => {
+//     try {
+//         await prisma.professor.update({
+//             where: { id: Number(req.body.id) },
+//             data: {
+//                 turmas: {
+//                     deleteMany: {}
+//                 }
+//             }
+//         });
+
+//         await prisma.professor.delete({
+//             where: { id: Number(req.body.id) }
+//         });
+
+//         res.redirect('/professor');
+//     } catch (error) {
+//         console.error(error);
+//         res.status(500).send("Erro ao excluir professor");
+//     }
+// };
+
 const excluir = async (req, res) => {
     try {
+        const { id } = req.params;
+
         await prisma.professor.update({
-            where: { id: Number(req.body.id) },
+            where: { id: Number(id) },
             data: {
                 turmas: {
                     deleteMany: {}
@@ -61,7 +85,7 @@ const excluir = async (req, res) => {
         });
 
         await prisma.professor.delete({
-            where: { id: Number(req.body.id) }
+            where: { id: Number(id) }
         });
 
         res.redirect('/professor');
