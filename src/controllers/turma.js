@@ -19,8 +19,8 @@ const listar = async (req, res) => {
                     select: {
                         professor: {
                             select: {
-                                nome: true, // Seleciona o nome do professor
-                                especialidade: true // Seleciona a especialidade do professor
+                                nome: true, 
+                                especialidade: true 
                             }
                         }
                     }
