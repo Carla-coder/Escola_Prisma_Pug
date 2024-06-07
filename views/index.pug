@@ -2,7 +2,7 @@ doctype html
 html(lang="pt-br")
     head
         meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
         title Escola ACME
         link(rel='stylesheet', href='style.css')
         link(rel='shortcut icon', href='icone.png')
@@ -22,7 +22,7 @@ html(lang="pt-br")
             div(class="container")
                 each turma in turmas
                     div(class="card")
-                        p(class="titulo")
+                        p(class="titulo")  
                             b Turma:
                             i #{turma.abreviacao}
                         p(class="dados") #{turma.nome}
@@ -30,7 +30,7 @@ html(lang="pt-br")
                             b Id da turma:
                             i #{turma.id}
                         button(onclick=`m${turma.id}.classList.remove('oculto')`) Detalhes
-                    div(class="modal oculto",id=`m${turma.id}`)
+                    div(class="modal oculto", id=`m${turma.id}`)
                         div(class="janela")
                             div(class="modalCabecalho")
                                 h2 Detalhes da turma #{turma.abreviacao}
@@ -59,7 +59,7 @@ html(lang="pt-br")
         footer
             button(onclick="modalCreate.classList.remove('oculto')") Nova Turma
             h2 By Carla-coder
-        div(class="modal oculto",id="modalCreate")
+        div(class="modal oculto", id="modalCreate")
             div(class="janela")
                 div(class="modalCabecalho")
                     h2 Cadastro de Turmas
@@ -67,7 +67,7 @@ html(lang="pt-br")
                 form(method="post", action="/turma")
                     div(class="grade")
                         label Nome:
-                        input(type="text",name="nome",placeholder="Digite o nome da turma", required)
+                        input(type="text", name="nome", placeholder="Digite o nome da turma", required)
                         label Abreviação:
-                        input(type="text",name="abreviacao",placeholder="Sigla", required)
+                        input(type="text", name="abreviacao", placeholder="Sigla", required)
                     input(type="submit", value="Cadastrar nova turma")

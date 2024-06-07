@@ -27,6 +27,7 @@ const listar = async (req, res) => {
                 },
             }
         });
+        console.log(JSON.stringify(turmas, null, 2));
         res.render('index', { turmas });
     } catch (error) {
         console.error("Erro ao listar turmas:", error);
