@@ -100,7 +100,7 @@ DATABASE_URL="mysql://root@localhost:3306/escola?schema=public&timezone=UTC"
 
 ## Autores
 
-- [@octokatherine](https://www.github.com/Carla-coder)
+- [@Carla-coder](https://www.github.com/Carla-coder)
 
 ## Instituição de Ensino
 
